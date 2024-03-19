@@ -1,7 +1,8 @@
-package com.example.composeretrofithiltsample
+package com.example.composeretrofithiltsample.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.composeretrofithiltsample.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
