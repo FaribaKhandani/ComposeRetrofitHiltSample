@@ -1,4 +1,6 @@
 package com.example.composeretrofithiltsample.viewmodel
 
-class ViewModelApi {
+import androidx.lifecycle.ViewModel
+
+class ViewModelApi :ViewModel() {
 }
