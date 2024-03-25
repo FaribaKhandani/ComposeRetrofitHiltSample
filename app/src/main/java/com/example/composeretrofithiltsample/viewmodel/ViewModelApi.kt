@@ -1,6 +1,10 @@
 package com.example.composeretrofithiltsample.viewmodel
 
 import androidx.lifecycle.ViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
 
-class ViewModelApi :ViewModel() {
+
+@HiltViewModel
+class ViewModelApi
+    :ViewModel() {
 }
