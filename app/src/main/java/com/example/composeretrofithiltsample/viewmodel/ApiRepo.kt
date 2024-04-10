@@ -8,7 +8,7 @@ import javax.inject.Inject
 
 class ApiRepo @Inject constructor(private val apiService: ApiService) {
 
- suspend fun  getNewsService(category:String): Response<ModelApi> {
-     return apiService.getNews(category)
+ suspend fun  getNewsService(): Response<ModelApi> {
+     return apiService.getNews()
  }
 }
