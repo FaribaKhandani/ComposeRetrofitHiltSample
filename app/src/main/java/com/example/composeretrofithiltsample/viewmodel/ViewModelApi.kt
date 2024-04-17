@@ -19,7 +19,13 @@ class ViewModelApi @Inject constructor(private val apiRepo: ApiRepo):ViewModel()
     private val _newsStateFlow = MutableStateFlow<List<Article>>(emptyList())
     val newsStateFlow: StateFlow<List<Article>> = _newsStateFlow
 
+    init {
+        fetchNews()
+    }
+
     fun fetchNews() {
+
+
         viewModelScope.launch(Dispatchers.IO) {
 
             val response = apiRepo.getNewsService()
