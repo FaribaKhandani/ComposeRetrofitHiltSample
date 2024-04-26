@@ -1,5 +1,7 @@
 package com.example.composeretrofithiltsample.ui
 
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -21,6 +23,19 @@ fun MyScreen(){
 }
 
 @Composable
-fun ArticleList(article: List<Article>){
+fun ArticleList(articles: List<Article>){
+
+    LazyColumn(){
+        items(articles){
+                articles ->
+            ArticleItem(article =articles)
+
+        }
+    }
+}
+
+
+@Composable
+fun ArticleItem(article: Article){
 
 }
